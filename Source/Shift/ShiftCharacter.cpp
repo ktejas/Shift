@@ -41,6 +41,13 @@ AShiftCharacter::AShiftCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
+void AShiftCharacter::BeginPlay()
+{
+	UCapsuleComponent *component = GetCapsuleComponent();
+	OnActorBeginOverlap.Add
+	Super::BeginPlay();
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 

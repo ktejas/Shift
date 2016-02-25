@@ -18,6 +18,8 @@ class AShiftCharacter : public ACharacter
 public:
 	AShiftCharacter();
 
+	virtual void BeginPlay() override;
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
